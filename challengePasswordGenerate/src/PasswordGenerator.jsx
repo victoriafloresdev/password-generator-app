@@ -24,11 +24,28 @@ function PasswordGenerator() {
           placeholder={password}
         />
 
+        <div id='box'>
 
-        <div id="password-generator">
-           <button onClick={generatePassword}>Generate Password</button>
+          <div>Caracter lenght</div>
+
+          <div id='checkboxes'>
+            <input type="checkbox" name="upperCaseLetters" id="upperCaseLetters" />
+            <label htmlFor="upperCaseLetters">Include UpperCase Letters</label>
+            <input type="checkbox" name="lowerCaseLetters" id="lowerCaseLetters" />
+            <label htmlFor="lowerCaseLetters">Include LowerCase Letters</label>
+            <input type="checkbox" name="numbers" id="numbers" />
+            <label htmlFor="numbers">Include Numbers</label>
+            <input type="checkbox" name="symbols" id="symbols" />
+            <label htmlFor="symbols">Include Symbols Letters</label>
+          </div>
+
+          <div id='strength'>Strength</div>
+
+          <div id="div-generator">
+             <button id='generate' onClick={generatePassword}>Generate Password</button>
+          </div>
+
         </div>
-       
       </div>
     </>
   );
