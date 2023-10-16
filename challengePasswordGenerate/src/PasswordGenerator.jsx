@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './PasswordGenerator.css'
+import Slider from "./Slider";
 
 function PasswordGenerator() {
   const [password, setPassword] = useState("P4$5W0rD!");
@@ -26,7 +27,9 @@ function PasswordGenerator() {
 
         <div id='box'>
 
-          <div>Caracter lenght</div>
+          <h2>Caracter Lenght</h2>
+
+          <Slider />
 
           <div id='checkboxes'>
             <input type="checkbox" name="upperCaseLetters" id="upperCaseLetters" />
@@ -36,7 +39,7 @@ function PasswordGenerator() {
             <input type="checkbox" name="numbers" id="numbers" />
             <label htmlFor="numbers">Include Numbers</label>
             <input type="checkbox" name="symbols" id="symbols" />
-            <label htmlFor="symbols">Include Symbols Letters</label>
+            <label htmlFor="symbols">Include Symbols</label>
           </div>
 
           <div id='strength'>Strength</div>
